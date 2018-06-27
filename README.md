@@ -49,59 +49,72 @@ The step-by-step guide...
 
 ### Prerequsite
 Make sure the wifi is turned off.
+
 ![wifi_off](.imgs/prereq_wifi_off.png)
 
 ### Step 1
 Open the VossLab folder on the desktop.
+
 ![voss_folder](.imgs/prereq_select_VossLab_folder.png)
 
 ### Step 2
-Select the project (either BETTER_Aging or BIKE_EXTEND)
+Select the project (either BETTER_Aging or BIKE_EXTEND).
+
 ![select_project_folder](.imgs/prereq_select_project.png)
 
 ### Step 3
 Create the subject folder within the project folder.
 It should follow the format `sub-<label>`.
+
 ![create_subject_folder](.imgs/prereq_create_subject_folder.png)
 
 ### Step 4
 Create the session folder within the subject folder.
-It should follow the format `ses-<label>`
+It should follow the format `ses-<label>`.
+
 ![create_session_folder](.imgs/prereq_create_session_folder.png)
 
 ### Step 5
-At the base of the project folder, open `Standard.acq`
+At the base of the project folder, open `Standard.acq`.
+
 ![open_standard](.imgs/prereq_select_standard.png)
 
 ### Step 6
-In the menu bar, select MP150, and from the dropdown select "Set Up Data Acquisition..."
+In the menu bar, select MP150, and from the dropdown select "Set Up Data Acquisition...".
+
 ![mp150](.imgs/prereq_select_mp150.png)
 
 ### Step 7
 After you select "Set Up Data Acquisition...", you should see a page like this.
+
 ![select_data_acquisition](.imgs/prereq_select_data_acquisition.png)
 
 ### Step 8
-Select the Length/Rate tab in the new window
+Select the Length/Rate tab in the new window.
+
 ![length_rate](.imgs/prereq_select_length_rate.png)
 
 ### Step 9
-Click on `File...` and select the session folder you just made as the place to save the data (the folder should be empty)
+Click on `File...` and select the session folder you just made as the place to save the data (the folder should be empty).
+
 ![choose_acq_folder](.imgs/prereq_select_folder_to_save.png)
 
 ### Step 10
 Rename the file from `Standard.acq` to `sub-<label>_ses-<label>_acq-` (where you replace `<label>` with the appropriate names).
 Notice the trailing `-` after `acq`; this is intentional, the program will append a 4 digit number after the `-`.
+
 ![name_acq_files](.imgs/prereq_name_file.png)
 
 ### Step 11
 Select save and this window will pop up, we want incrementing number selected, which should be default.
-Select ok to continue
+Select ok to continue.
+
 ![incrementing_numbers](.imgs/prereq_incrementing_number.png)
 
 ### Step 12
 Test if the file is working correctly by clicking start on the open acknowledge file (which will still have the title `Standard.acq`).
 Once you hit start the name of the tab should change to what you named the file with the 4 digit acquisition number.
+
 ![start_button](.imgs/hit_start_button.png)
 ![ensure_data](.imgs/prere_ensure_data_records.png)
 
@@ -111,23 +124,28 @@ Working with the MRI technicians, start the recordings before each relevant MRI 
 ### Step 14
 After you've collected the physio data, open all the useful acquisitions (not the test one),
 from the session folder into the program.
+
 ![open_all_acqs](.imgs/open_all_acqs.png)
 
 ### Step 15
-For each acquisition tab, select "Save As..."
+For each acquisition tab, select "Save As...".
+
 ![save_as](.imgs/select_save_as.png)
 
 ### Step 16
-Choose the correct session directory to place the converted physio data
+Choose the correct session directory to place the converted physio data.
+
 ![select_correct_folder](.imgs/select_correct_folder_to_save.png)
 
 ### Step 17
 Rename the file using BIDS conventions following this general template:
 `sub-<label>_ses-<label>_task-<label>(_run-<label>)_physio` where the run parameter is optional. (e.g. we need for the rest scans, but not the task scans)
+
 ![bids_name](.imgs/rename_file_bids.png)
 
 ### Step 18
 Change saving the file from `.acq` to `*.txt*.csv`.
+
 ![text_file](.imgs/save_as_txt.png)
 
 ### Step 19
@@ -137,6 +155,7 @@ Select save and you will see another box pop up, select `UNIX (LF)` line endings
 
 ### Step 20
 Turn on the wifi to upload the data to github.
+
 ![wifi_on](.imgs/turn_wifi_on.png)
 
 ### Step 21
@@ -144,4 +163,5 @@ Follow the [git directions](https://github.com/HBClab/addGitData/blob/master/REA
 
 ### Step 22
 Turn off the wifi when you are done!
+
 [turn_off_wifi](.imgs/prereq_wifi_off.png)

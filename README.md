@@ -164,4 +164,4 @@ Follow the [git directions](https://github.com/HBClab/addGitData/blob/master/REA
 ### Step 22
 Turn off the wifi when you are done!
 
-[turn_off_wifi](.imgs/prereq_wifi_off.png)
+![turn_off_wifi](.imgs/prereq_wifi_off.png)

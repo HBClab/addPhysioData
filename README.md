@@ -23,13 +23,10 @@ Shortcut if you know what steps to take, but forgot how to name the files
     - day2pre
     - day2post
     - postintervention
-- `task-<label>`
-    - rest
+- `task-<label>(_run-<label>)`
+    - rest (1, 2, 3)
     - breathhold
-- `run-<label>`
-    - 1
-    - 2
-    - 3
+
 
 #### Better Aging
 - `sub-<label>`
@@ -37,12 +34,15 @@ Shortcut if you know what steps to take, but forgot how to name the files
 - `ses-<label>`
     - pre
     - post
-- `task-<label>`
-    - rest
+- `task-<label>(_run-<label>)`
+    - rest (1, 2)
     - taskswitch
-- `run-<label>`
-    - 1
-    - 2
+- **Examples**
+    - valid: `sub-004_ses-pre_task-rest_run-1`
+        - the first run of rest
+    - invalid: `sub-004_ses-pre_task-taskswitch_run-1`
+        - there are no other runs of taskswitch, so don't add the run key-label pair
+    - valid: `sub-004_ses-pre_task-taskswitch`
 
 ## Steps!
 The step-by-step guide...
@@ -95,7 +95,7 @@ Select the Length/Rate tab in the new window.
 ![length_rate](.imgs/prereq_select_length_rate.png)
 
 ### Step 9
-Click on `File...` and select the session folder you just made as the place to save the data (the folder should be empty).
+Click on `File...` (in the selected window not the `file` in the top menu along the top of the screen) and select the session folder you just made as the place to save the data (the folder should be empty).
 
 ![choose_acq_folder](.imgs/prereq_select_folder_to_save.png)
 
